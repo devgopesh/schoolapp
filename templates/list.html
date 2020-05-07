@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <!-- {{obj.username}}<br /> -->
+        {% for i in obj %} {{ i.ques}}<br />
+        {% endfor %}
+        <a href="{% url 'user:assign' %}"><button>create</button></a>
+    </body>
+</html>

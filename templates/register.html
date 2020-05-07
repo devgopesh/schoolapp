@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fill the details</title>
+    </head>
+    <body bgcolor="pink"></body>
+    <form action="." method="post">
+        {% csrf_token %} first name<input type="text" name="first_name" /><br />
+        last name<input type="text" name="last_name" /><br />
+        username<input type="text" name="username" /><br />
+        password<input type="password" name="password" /><br />
+        confirm password<input type="password" name="confirm" /><br />
+        <input type="submit" />
+    </form>
+    <h2>{{msg}}</h2>
+</html>

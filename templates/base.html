@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <form method="post" action=".">
+            {% csrf_token %}
+
+            <input id="a" type="radio" required name="option" value="teacher" />
+            <label for="a">is_teacher</label><br />
+
+            <input type="radio" required name="option" value="student" />
+            <label for="a">is_student</label><br />
+            <input type="submit" />
+            <!-- <button>submit</button> -->
+        </form>
+    </body>
+</html>

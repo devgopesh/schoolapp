@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>fill the details</title>
+    </head>
+    <body bgcolor="pink"></body>
+    <form action="." method="post">
+        {% csrf_token %} username<input type="text" name="username" /><br />
+        password<input type="password" name="password" /><br />
+
+        <input type="submit" />
+    </form>
+    <h2>{{msg}}</h2>
+</html>
